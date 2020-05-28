@@ -1,0 +1,12 @@
+s=set()
+#l=[1,2,3,4]
+#print(type(s))
+#set1=set(l)
+#print(set1)
+s.add(1)
+s.add(1)
+s.add(2)
+print(s)
+s1=s.union({1,2,3})
+s2=s.intersection({1,2,3})
+print(s1,s,s2)
