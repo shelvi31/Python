@@ -106,10 +106,10 @@ for language in os.listdir(book_dir):
 import matplotlib.pyplot as plt
 
 plt.plot(stats.length, stats.unique, "bo")
-plt.show()
-plt.savefig("gutenberg1".pdf")
+# plt.show()
+# plt.savefig("plot1".pdf")
 plt.loglog(stats.length, stats.unique, "bo")
-plt.savefig("gutenberg2.pdf")
+# plt.savefig("plot2.pdf")
 
 #Let's construct a plot using different colors for different languages.
 plt.figure(figsize = (10,10))
@@ -128,7 +128,7 @@ plt.loglog(subset.length,subset.unique,"o",label = "Portuguese",color = "bluevio
 plt.legend()
 plt.xlabel("Book Length")
 plt.ylabel("Number of unique words")
-plt.savefig("language_plot.pdf")
+# plt.savefig("language_plot.pdf")
 plt.show()
 
 
