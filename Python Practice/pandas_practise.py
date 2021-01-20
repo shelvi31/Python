@@ -491,11 +491,11 @@
 import pandas as pd
 import numpy as np
 
-wine = pd.read_csv("wine.csv")
-dfwine = pd.DataFrame(wine)
+# wine = pd.read_csv("wine.csv")
+# dfwine = pd.DataFrame(wine)
 
-print(dfwine)
-print(dfwine.columns)
+# print(dfwine)
+# print(dfwine.columns)
 
 
 # print(dfwine.shape)
@@ -513,26 +513,27 @@ print(dfwine.columns)
 
 # print(best_rating_per_price)
 
-price_extremes = dfwine.groupby('variety').price.agg([min, max])
-print(price_extremes)
-sorted_varieties = price_extremes.sort_values(by = ["min","max"], ascending= False)
-print(sorted_varieties)
+# price_extremes = dfwine.groupby('variety').price.agg([min, max])
+# print(price_extremes)
+# sorted_varieties = price_extremes.sort_values(by = ["min","max"], ascending= False)
+# print(sorted_varieties)
 
-print(dfwine.groupby(["country","variety"]).size().sort_values(ascending=False))
+# print(dfwine.groupby(["country","variety"]).size().sort_values(ascending=False))
 
-p1=dfwine.groupby('variety').price.min()
-p2 = dfwine.groupby('variety').price.max()
-p3 = {"min":p1,"max":p2}
-p4 = pd.DataFrame(p3)
-print(p4)
+# p1=dfwine.groupby('variety').price.min()
+# p2 = dfwine.groupby('variety').price.max()
+# p3 = {"min":p1,"max":p2}
+# p4 = pd.DataFrame(p3)
+# print(p4)
 
-ser = pd.isnull(dfwine["price"])
-def count(ser): 
-    return sum(bool(x) for x in ser) 
-y = count(ser)
-print(y)
+# ser = pd.isnull(dfwine["price"])
+# def count(ser): 
+#     return sum(bool(x) for x in ser) 
+# y = count(ser)
+# print(y)
 
 
 
-reviews_per_region = dfwine.region_1.fillna("Unknown").value_counts().sort_values(ascending=False)
-print(reviews_per_region)
+# reviews_per_region = dfwine.region_1.fillna("Unknown").value_counts().sort_values(ascending=False)
+# print(reviews_per_region)
+
